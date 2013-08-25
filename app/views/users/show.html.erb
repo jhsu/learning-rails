@@ -1,22 +1,24 @@
-<p id="notice"><%= notice %></p>
+<div id="user" class="user_show">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @user.name %>
+	</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+	<p>
+	  <strong>Email:</strong>
+	  <%= @user.email %>
+	</p>
 
-<h2>posts</h2>
-<% @posts.each do |post| %>
-<div><%= post.body %></div>
-<% end %>
-<% if @posts.empty? %>
-<div>No posts yet.</div>
-<% end %>
+	<h2>posts</h2>
+	<% @posts.each do |post| %>
+	<div><%= post.body %></div>
+	<% end %>
+	<% if @posts.empty? %>
+	<div>No posts yet.</div>
+	<% end %>
+</div>
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
