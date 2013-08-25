@@ -10,5 +10,24 @@
   <%= @user.email %>
 </p>
 
+<h2>posts</h2>
+<% @posts.each do |post| %>
+<div><%= post.body %></div>
+<% end %>
+<% if @posts.empty? %>
+<div>No posts yet.</div>
+<% end %>
+
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+
+
+
+
+
+
+
+
+

@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :rememberable, :validatable
   validates :email, :presence => true 
+
+  has_many :posts
 end
