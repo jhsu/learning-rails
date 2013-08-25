@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Microposts</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -16,7 +18,14 @@
 <%= link_to "users", users_path %>
 <%= link_to "posts", posts_path %>
 
-<%= yield %>
+<div class="container">
+  <div class="row">
+    <% if flash[:notice] %>
+      <div class="alert alert-success"><%= flash[:notice] %></div>
+    <% end %>
+  </div>
+  <%= yield %>
+</div>
 
 </body>
 </html>

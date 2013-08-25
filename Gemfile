@@ -16,6 +16,7 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'anjlab-bootstrap-rails', '~>3.0', require: 'bootstrap-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
