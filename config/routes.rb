@@ -1,5 +1,5 @@
 Microposts::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "registrations" }
   root "users#index"
 
   resources :posts
