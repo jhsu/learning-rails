@@ -12,6 +12,7 @@ group :production do
   gem 'pg'
 end
 
+gem 'anjlab-bootstrap-rails', '~>3.0', require: 'bootstrap-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
